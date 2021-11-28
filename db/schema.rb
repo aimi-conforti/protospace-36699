@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_11_26_190522) do
+ActiveRecord::Schema.define(version: 2021_11_28_225818) do
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.string "name", default: "", null: false
+    t.string "name", null: false
     t.text "profile", null: false
     t.text "occupation", null: false
     t.text "position", null: false
